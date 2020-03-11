@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
-    <p>pierwszy paragraf</p>
-    <p>drugi paragraf</p>
-    <p>trzeci paragraf</p>
-    <p>dodany paragraf</p>
-    <p>paragraf 5</p>
-    <p>paragraf 6</p>
+   <form action="https://formspree.io/marcinkacki94@gmail.com" method="POST">
+        <label for="Imie">  Imie</label><br>
+            <input type="text" id="Imie"><br>
+        <label for="Nazwisko">Nazwisko</label><br>
+            <input type="text" id="Nazwisko"><br>
+        <label for="mail">Email</label><br>
+            <input type="email" id="mail"><br>
+        <label for="phone"> Numer telefonu</label><br>
+            <input type="number" id="phone"><br>
+        <label for="city">Miasto</label><br>
+            <select name="Miasto" id="city">
+                <option value="Krakow">Krakow</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Sosnowiec">Sosnowiec</option>
+            </select><br>
+        <label for="male" class="gender">Mezczyzna</label>
+            <input type="radio" id="male"><br>
+        <label for="female" class="gender">Kobieta</label>
+            <input type="radio" id="female"><br>
+        <label for="agreement" class="zgoda">Wyrazam zgode na przetwarzanie moich danych osobowych.</label>
+            <input type="radio" id="agreement"><br>
+        <label for="msg" class="Wiadomosc"> Wiadomosc:</label><br>
+            <textarea name="Wiadomosc" id="msg" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Send">
+
+
+    </form>
+    
+ 
+    
 </body>
 </html>
